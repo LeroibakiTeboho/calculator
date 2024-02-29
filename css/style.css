@@ -1,0 +1,34 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+    height: 100vh;
+    background-color: black;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg_video
+{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.calculator
+{
+   background-color: rgb(6, 5, 42, 0.95);
+   padding: 20px;
+   border-radius: 10px;
+}
