@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 *
 {
     margin: 0;
     padding: 0;
+    outline: 0;
     box-sizing: border-box;
     border: none;
     text-decoration: none;
@@ -28,7 +31,97 @@ body
 
 .calculator
 {
-   background-color: rgb(6, 5, 42, 0.95);
-   padding: 20px;
+   background-color: rgba(6, 5, 42, 0.95);
+   padding: 25px;
    border-radius: 10px;
+   outline: 1px solid #271000;
+   box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.5);
+}
+
+.calculator form input
+{
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(6, 5, 42, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+    background-color: transparent;
+    font-size: 20px;
+    color: #f37012;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.calculator form input:active
+{
+    transform: scale(0.96);
+}
+
+.logo
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #f37012;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding-inline: 10px;
+    margin-bottom: 20px;
+    cursor: default;
+    pointer-events: none;
+}
+
+.circle
+{
+    border: 3.5px solid #f37012;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle h1
+{
+    font-size: 2rem;
+    color: #f37012;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-family: "Bebas Neue", sans-serif;
+    margin-top: 5px;
+    /* transform: rotate(180deg); */
+}
+
+.equation
+{
+    font-size: 1rem;
+}
+
+.display
+{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+
+form .display input
+{
+    text-align: right;
+    flex: 1;
+    font-size: 40px;
+    outline: 1px solid #271000;
+    background-color: #06052A;
+    box-shadow: none;
+    padding-inline: 10px;
+}
+
+form .display input:active
+{
+    transform: none;
+}
+
+form input.equal
+{
+    width: 145px;
 }

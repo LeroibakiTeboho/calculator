@@ -1,8 +1,8 @@
-// const video = document.getElementById('myVideo');
+const video = document.getElementById('myVideo');
 
-// const changeSpeed = (speed) =>
-// {
-//     video.playbackRate = speed;
-// }
+const changeSpeed = (speed) =>
+{
+    video.playbackRate = speed;
+}
 
-// changeSpeed(0.5);
+changeSpeed(0.8);
