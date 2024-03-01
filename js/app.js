@@ -5,4 +5,4 @@ const changeSpeed = (speed) =>
     video.playbackRate = speed;
 }
 
-changeSpeed(0.8);
+changeSpeed(0.9);
