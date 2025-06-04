@@ -14,7 +14,13 @@ type ScientificFunction =
   | "pi"
   | "e"
   | "fact"
-  | "^";
+  | "^"
+  | "inv"
+  | "square"
+  | "cube"
+  | "10x"
+  | "mod"
+  | "n!";
 type MemoryOperation = "MC" | "MR" | "M+" | "M-";
 type ClearOperation = "AC" | "C" | "CE";
 type Digit = "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | ".";
@@ -33,7 +39,8 @@ type InputChar =
   | "("
   | ")"
   | "π"
-  | "e";
+  | "e"
+  | "00";
 
 export default function Home() {
   // Calculator state with explicit types
